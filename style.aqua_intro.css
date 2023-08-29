@@ -1,0 +1,342 @@
+* {
+    scroll-padding-top: 10rem;
+}
+
+
+body{
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: grid;
+    gap: 2rem;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body ::selection {
+    background: #f3f37a;
+    color: rgb(14, 80, 95);
+    cursor: none;
+}
+
+h3 {
+    margin: .25rem;
+}
+
+p {
+    font-size: clamp(3px, 1.2rem, 2rem);
+}
+
+.aqua_intro p span{
+    font-weight: 600;
+    padding: 15px;
+    background-image: url(./images/cloud.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 2px;
+    display: inline-block;
+}
+
+#aim,
+#name_meaning,
+#name_letter {
+    background-color: #abd8ff7b;
+    padding: 15px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px #f3f37a;
+    color: #004f52;
+}
+
+#name_meaning p{
+    display: grid;
+    gap: .25rem;
+}
+
+
+
+
+.fade-in {
+    /*not showing*/
+    opacity: 0.3;
+    transition: opacity 250ms ease-in;
+    pointer-events: none;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+/* animated-text */
+
+#animated-text {
+    font-size: clamp(0.2rem, 34px, 6rem);
+    min-width: 290px;
+    background-color: rgb(193, 226, 255);
+    color: rgb(75, 0, 0);
+    padding: 20px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px #f3f37a;
+}
+
+#animated-text span {
+    position: relative;
+}
+
+#animated-text span::before {
+    content: 'Aqua';
+    color: rgb(3, 140, 96);
+    animation: words 20s infinite;
+}
+
+#animated-text span::after {
+    content: '';
+    background-color: rgb(193, 226, 255);
+    backdrop-filter: blur(15px);
+    position: absolute;
+    width: calc(100% + 8px);
+    overflow: hidden;
+    height: 140%;
+    border-left: 2px solid rgb(3, 140, 96);
+    right: -8px;
+    animation: cursor .7s infinite, typing 20s steps(14) infinite;
+}
+
+@media (max-width: 960px){
+    #animated-text {
+        font-size: medium;
+}}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid transparent;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: 'Aqua';
+    }
+
+    21%,
+    40% {
+        content: '①號學生會候選內閣';
+    }
+
+    41%,
+    60% {
+        content: '同學意見嘅反映者';
+    }
+
+    61%,
+    80% {
+        content: '同學福利嘅保障者';
+    }
+
+    81%,
+    100% {
+        content: '你的最佳選擇';
+    }
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+@media (max-width: 940px) {
+    .animated-text,
+    .animated-text span{
+        font-size: clamp(10px, 20px, 32px);
+    }
+}
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+
+section {
+    margin: 60vh 2rem;
+
+}
+
+.logo {
+    max-width: 10ch;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    width: 50%;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 100;
+    background-color: aliceblue;
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-inline-start: 0;
+    /* overflow-x: hidden; */
+}
+
+nav li {
+    width: 2rem;
+    height: 2rem;
+    color: aquamarine;
+    background-color: rgb(0, 72, 80);
+    border-radius: 50%;
+    border: rgb(96, 83, 0) 2px;
+    box-shadow: 0 .3rem .3rem #57f8b8;
+    margin: .4rem;
+    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li:hover {
+    background-color: #57f8b8;
+    color: rgb(0, 40, 80);
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.mainbody ul {
+    padding: 0 3rem;
+}
+
+.links {
+    list-style: none;
+}
+
+.IG_logo {
+    max-width: 2ch;
+}
+
+.mainbody {
+    display: grid;
+    position: fixed !important;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    height: 100vh;
+    max-width: 25vw;
+    background-color: white;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    z-index: 101;
+}
+
+.mainbody a {
+    text-decoration: none;
+    font-family: "CWTeXYen", sans-serif;
+    font-size: clamp(1px, 1em, 5em);
+    font-weight: 600;
+    color: brown
+}
+
+.mainbody li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 1em;
+}
+
+video {
+    z-index: -1;
+}
+
+video.left {
+    height: 100vh;
+    /* width: 45vw; */
+    overflow-x: hidden;
+    position: fixed;
+    /* left: 50%; */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* min-width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 640px) {
+    video.left {
+        display: none;
+        position: relative;
+        z-index: 1;
+        max-height: 30vh;
+    }
+
+    .right {
+        padding: 0;
+        width: 100%;
+    }
+
+    .mainbody {
+        display: none;
+    }
+}
+
+.right {
+    background-color: aliceblue;
+    padding: 0 30px;
+    max-width: fit-content;
+}
+
+@media (min-width: 640px) {
+    .right {
+        margin: 0 0 0 45vw;
+        /* width: 100% */
+    }
+
+    nav ul {
+        right: 10px;
+    }
+}
+
+#name-meaning span {
+    margin: .5rem
+}
+
+#aqua_intro {
+    margin-top: 40vh;
+    font-size: larger;
+}
+
+#aqua_intro p{
+    font-size: larger;
+}
