@@ -15,3 +15,11 @@ html {
     height: 100vh;
     background: linear-gradient( 225deg, #c7f5ff, #07d2ff);
 }
+
+h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transition: translate(-50%, -50%);
+}
