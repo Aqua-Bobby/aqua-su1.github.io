@@ -277,6 +277,10 @@ video.left {
     .mainbody {
         display: none;
     }
+
+    .card {
+        margin-left: 0;
+    }
 }
 
 .right {
