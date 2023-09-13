@@ -306,7 +306,6 @@ video.left {
     margin: 4rem
 }
 
-@media (min-width: 640px) {
     .right {
         margin: 0 0 0 42.5vw;
         /* width: 100% */
@@ -318,7 +317,6 @@ video.left {
 
     .logo {
     max-height: 20vh;
-}
 }
 
 a {
