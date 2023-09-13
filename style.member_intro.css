@@ -39,6 +39,12 @@ body {
     margin: 20vh 5ch;
 }
 
+@media (max-width: 640px) {
+    .card {
+        max-width: 80vw;
+    }
+}
+
 .card:hover,
 .card:focus-within {
     transform: scale(1.05)
