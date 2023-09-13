@@ -315,3 +315,7 @@ video.left {
 a {
     text-decoration: none;
 }
+
+.logo {
+    max-width: 20vw;
+}
