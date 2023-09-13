@@ -214,8 +214,11 @@ li {
     list-style: none;
 }
 
-.IG_logo {
-    max-width: 2ch;
+.IG_logo{
+    margin: 1em;
+    bottom: 10px;
+    height: clamp(1em, 1.5em, 2em);
+    width: clamp(1em, 1.5em, 2em);
 }
 
 .mainbody {
@@ -322,6 +325,7 @@ a {
     text-decoration: none;
 }
 
-img.logo {
-    max-width: 20vw !important;
+.logo{
+    max-width: 20vh;
+    margin: clamp(1em, 1.5em, 2.5em), 0;
 }
