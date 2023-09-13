@@ -210,6 +210,10 @@ li {
     padding: 0;
 }
 
+.IG_logo {
+    max-width: 2ch;
+}
+
 .links {
     list-style: none;
 }
