@@ -306,10 +306,10 @@ video.left {
     nav ul {
         right: 10px;
     }
-}
 
-.logo {
+    .logo {
     max-width: 20vw;
+}
 }
 
 a {
