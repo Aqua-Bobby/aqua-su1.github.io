@@ -317,5 +317,5 @@ a {
 }
 
 .logo {
-    max-width: 20vw;
+    max-width: 20vw !important;
 }
