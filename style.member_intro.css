@@ -287,6 +287,9 @@ video.left {
     background-color: aliceblue;
     padding: 0 30px;
     max-width: fit-content;
+
+    .card {
+        mac-width: 80vw;
 }
 
 
