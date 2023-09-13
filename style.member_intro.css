@@ -316,6 +316,6 @@ a {
     text-decoration: none;
 }
 
-.logo {
+img.logo {
     max-width: 20vw !important;
 }
