@@ -33,6 +33,13 @@ nav ul {
     /* overflow-x: hidden; */
 }
 
+@media (max-width: 640px) {
+    li {
+        inline-start-padding: 0;
+        padding: 0;
+    }
+}
+
 nav li {
     width: 2rem;
     height: 2rem;
