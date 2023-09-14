@@ -36,7 +36,7 @@ body {
     width: 100%;
     background-image: url(./images/website\ photo/kishi.jpg);
     background-repeat: no-repeat;
-    margin: 20vh 5ch;
+    margin: 10vh 5ch;
 }
 
 @media (max-width: 640px) {
