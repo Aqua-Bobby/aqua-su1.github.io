@@ -57,7 +57,7 @@ body {
         hsl(125, 48%, 55%, 0),
         hsl(177, 91%, 43%)
         );
-        height: 15rem;
+        height: 20rem;
 }
 
 @media (hover){
